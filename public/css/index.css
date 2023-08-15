@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+:root {
+    --primary-color: #3d5cb8;
+    --primary-color-dark: #334c99;
+    --text-dark: #0f172a;
+    --text-light: #64748b;
+    --extra-light: #f1f5f9;
+    --white: #ffffff;
+    --max-width: 1200px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.section__container {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 2rem 0;
+}
+
+.section__header {
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 3rem;
+    color: var(--text-dark);
+}
+
+.select {
+    width: 180px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+}
+
+.select option {
+    padding: 5px;
+}
+
+
+.btn {
+    padding: 0.75rem 2rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--white);
+    background-color: var(--primary-color);
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn.tickets {
+    background-color: #049fe1;
+    font-weight: 700;
+}
+
+.btn.search {
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: var(--primary-color-dark);
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    display: flex;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+nav {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.nav__logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.header__container .section__header {
+    text-align: center;
+    font-size: 3rem;
+    line-height: 4rem;
+}
+
+.booking__container {
+    border-radius: 2rem;
+    border: 1px solid var(--extra-light);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+}
+
+.booking__nav .option {
+    cursor: pointer;
+}
+
+.booking__nav .option.active {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+form .form__group.return {
+    display: none;
+}
+
+.booking__nav {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    background-color: var(--extra-light);
+    border-radius: 5px;
+}
+
+.booking__nav span {
+    flex: 1;
+    padding: 1rem 2rem;
+    font-weight: 500;
+    color: var(--text-light);
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.booking__container form {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.booking__container .form__group {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.booking__container .form__group span {
+    padding: 10px;
+    font-size: 1.5rem;
+    color: var(--text-dark);
+    background-color: var(--extra-light);
+    border-radius: 1rem;
+}
+
+.booking__container .input__group {
+    width: 100%;
+}
+
+.booking__container input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--primary-color);
+    color: var(--text-dark);
+}
+
+.booking__container .form__group p {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    color: var(--text-light);
+}
+
+.flight-card {
+    background-color: #f5f5f5;
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1rem;
+    position: relative;
+}
+
+#airline {
+    width: 100%;
+    font-family: Arial;
+    font-size: 28px;
+    font-weight: bold;
+    color: rgba(0, 0, 102, 1);
+    margin: 0.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.slip {
+    display: flex;
+    max-width: 100%;
+    background: #eee;
+    gap: 10px;
+    align-items: center;
+    padding: 0 1rem 0 1rem;
+    position: relative;
+
+}
+
+.fromslip {
+    font-size: 35px;
+}
+
+.toslip {
+    font-size: 35px;
+
+}
+
+#price {
+    position: absolute;
+    right: 20px;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 18px;
+    color: rgba(0, 0, 102, 1);
+}
+
+.card {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-row-gap: 2px;
+    grid-column-gap: 0px;
+    margin: 0.5rem;
+}
+
+.card p {
+    font-family: Arial Narrow, Arial;
+    font-weight: bold;
+    font-size: 18px;
+    color: #999;
+    margin: 10px;
+}
+
+.card p span {
+    color: #555;
+    font-size: 17px;
+}
+
+.card button {
+    background-color: #1d4de8;
+    border: none;
+    color: white;
+    width: 50%;
+    margin: 1rem 1rem 1rem 0;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+h1 {
+    margin-left: 10px;
+}
+
+#flightResults ul,
+#flightResults1 ul {
+    list-style: none;
+}

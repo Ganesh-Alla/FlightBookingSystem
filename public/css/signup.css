@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+:root {
+    --primary-color: #3d5cb8;
+    --primary-color-dark: #334c99;
+    --text-dark: #0f172a;
+    --text-light: #64748b;
+    --extra-light: #f1f5f9;
+    --white: #ffffff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.btn {
+    padding: 0.75rem 2rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--white);
+    background-color: var(--primary-color);
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: var(--primary-color-dark);
+}
+
+img {
+    width: 100%;
+    display: flex;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.nav__logo {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 2rem;
+    height: 80vh;
+    margin: auto;
+    margin-top: 5%;
+    padding: 5rem 1rem;
+    border: 1px solid var(--extra-light);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+}
+
+.division1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 60%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.division2 {
+    border-radius: 2rem;
+    border: 1px solid var(--extra-light);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+    flex-basis: 36%;
+    margin-right: 2%;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+
+.division2 form h1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.division2 form {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+
+.division2 .form__group {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.division2 .form__group span {
+    padding: 10px;
+    font-size: 1.5rem;
+    color: var(--text-dark);
+    background-color: var(--extra-light);
+    border-radius: 1rem;
+}
+
+.division2 .input__group {
+    width: 100%;
+    position: relative;
+    margin: 2rem;
+}
+
+.division2 label {
+    position: absolute;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--text-dark);
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.division2 input {
+    width: 100%;
+    margin-top: 10px;
+    position: relative;
+    padding: 10px 0;
+    font-size: 1.3rem;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--primary-color);
+    color: var(--text-dark);
+}
+
+.division2 p {
+    margin: 2px auto;
+}
+
+.division2 p a {
+    color: #0051ff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.division2 .btn {
+    padding: 0.75rem 2rem;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    color: var(--white);
+    background-color: var(--primary-color);
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 1.5rem;
+}
+
+.division2 .btn:hover {
+    background-color: var(--primary-color-dark);
+}
+
+@media screen and (max-width: 600px) {
+
+    .container {
+        box-shadow: none;
+    }
+
+    .division2 {
+        flex-basis: 100%;
+    }
+
+    .division1 {
+        flex-basis: 100%;
+    }
+}

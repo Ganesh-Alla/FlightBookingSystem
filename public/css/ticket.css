@@ -1,0 +1,122 @@
+.flight-card {
+    background-color: #f5f5f5;
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1rem;
+    position: relative;
+}
+
+#airline {
+    width: 100%;
+    font-family: Arial;
+    font-size: 28px;
+    font-weight: bold;
+    color: rgba(0, 0, 102, 1);
+    margin: 0.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.slip {
+    display: flex;
+    max-width: 100%;
+    background: #eee;
+    gap: 10px;
+    align-items: center;
+    padding: 0 1rem 0 1rem;
+    position: relative;
+
+}
+
+.fromslip {
+    font-size: 35px;
+}
+
+.toslip {
+    font-size: 35px;
+
+}
+
+#price {
+    position: absolute;
+    right: 20px;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 18px;
+    color: rgba(0, 0, 102, 1);
+}
+
+.card {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-row-gap: 2px;
+    grid-column-gap: 0px;
+    margin: 0.5rem;
+}
+
+.card p {
+    font-family: Arial Narrow, Arial;
+    font-weight: bold;
+    font-size: 18px;
+    color: #999;
+    margin: 10px;
+}
+
+.card p span {
+    color: #555;
+    font-size: 17px;
+}
+
+.card button {
+    background-color: #1d4de8;
+    border: none;
+    color: white;
+    width: 50%;
+    margin: 1rem 1rem 1rem 0;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#flightTickets ul,
+#flightTickets1 ul {
+    list-style: none;
+}
+
+nav {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.nav__logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.btn {
+    padding: 0.75rem 2rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    background-color: #3d5cb8;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn.tickets {
+    color: #eee;
+    background-color: #049fe1;
+    font-weight: 700;
+}

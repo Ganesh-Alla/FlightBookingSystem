@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>Flight Book</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__logo">CodSoft</div>
+      <button class="btn tickets" onclick="openTicketPage()">My Tickets</button>
+
+      <script>
+        function openTicketPage() {
+          window.location.href = '/ticket';
+        }
+      </script>
+      <form action="/logout" method="POST">
+      <button class="btn">Log Out </button></form>
+    </nav>
+    <header class="section__container header__container">
+      <h1 class="section__header">Find And Book<br />A Great Experience</h1>
+    </header>
+    <section class="section__container booking__container">
+      <div class="booking__nav">
+        <span class="option active" id="oneWay">One Way</span>
+        <span class="option" id="twoWay">Two Way</span>
+      </div>
+    <form id="flightSearchForm">
+      <div class="form__group">
+        <span><i class="ri-map-pin-line"></i></span>
+          <div class="input__group">
+            <select id="fromCountry" name="fromCountry" class="select" onchange="updateToCountryOptions()">
+                <option value="">Select</option>
+                <option value="New York, USA">New York, USA</option>
+                <option value="London, UK">London, UK</option>
+                <option value="Los Angeles, USA">Los Angeles, USA</option>
+                <option value="Tokyo, Japan">Tokyo, Japan</option>
+                <option value="Sydney, Australia">Sydney, Australia</option>
+                <option value="Singapore">Singapore</option>
+                <option value="Paris, France">Paris, France</option>
+              </select>
+          <p>Where are you from?</p>
+        </div>
+      </div>
+      <div class="form__group">
+        <span><i class="ri-map-pin-line"></i></span>
+          <div class="input__group">
+            <select id="toCountry" name="toCountry" class="select" disabled>
+                <option value="">Select</option>
+                <option value="New York, USA">New York, USA</option>
+                <option value="London, UK">London, UK</option>
+                <option value="Los Angeles, USA">Los Angeles, USA</option>
+                <option value="Tokyo, Japan">Tokyo, Japan</option>
+                <option value="Sydney, Australia">Sydney, Australia</option>
+                <option value="Singapore">Singapore</option>
+                <option value="Paris, France">Paris, France</option>
+              </select>
+          <p>Where are you going?</p>
+        </div>
+      </div>
+      <div class="form__group">
+        <span><i class="ri-user-3-line"></i></span>
+          <div class="input__group">
+            <select id="no" name="no" class="select">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+          <p>No. of Passengers</p>
+        </div>
+      </div>
+
+        <div class="form__group">
+          <span><i class="ri-calendar-line"></i></span>
+            <div class="input__group">
+               <input type="date" id="dateOfJourney" name="dateOfJourney">
+            <p>Date of Journey</p>
+          </div>
+        </div>
+        <div class="form__group return"  id="Return">
+          <span><i class="ri-calendar-line"></i></span>
+            <div class="input__group">
+               <input type="date" id="returnDate" name="returnDate">
+               <p>Return Journey</p>
+            </div>
+        </div> 
+        <button class="btn search" type="submit"><i class="ri-search-line"></i></button>
+      </form>
+      <div id="flightResults" >
+      </div>
+      <div id="flightResults1" >
+      </div>
+    </section>
+
+      <script src="./scripts/main.js"></script>
+      <script src="./scripts/flights.js"></script>
+</body>
+</html>

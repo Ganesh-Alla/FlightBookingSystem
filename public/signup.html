@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/signup.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <script src="./scripts/signup.js"></script>
+    <nav>
+      <div class="nav__logo">CodSoft</div>
+    </nav>
+
+    <header class="container">
+      <div class="division1">
+        <h1>Welcome To FlightQuest</h1>
+        <img src="images/header.jpg" alt="header" />
+      </div>
+      <div class="division2">
+        <form id="signupForm" action="/signup" method="POST">
+            <h1 >Sign Up</h1>
+          <div class="form__group">
+            <span><i class="ri-user-3-line"></i></span>
+              <div class="input__group">
+                <input type="text" id="signupUsername" name="username" required />
+                <label>UserName</label>
+              </div>
+          </div>
+          <div class="form__group">
+            <span><i class="ri-lock-2-line"></i></span>
+              <div class="input__group">
+                <input type="password" id="signupPassword" name="password" required />
+                <label>Password</label>
+            </div>
+          </div>
+          <button type="submit" class="btn">Create</button>
+        </form>
+        <p>Already have an account?<a  href="/login"> Login Now!</a></p>
+      </div>
+    </header>
+  </body>
+</html>
+
+  
